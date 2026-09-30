@@ -13,5 +13,5 @@ Các chức năng chính:
 Công nghệ sử dụng: Node js, React Native, ExpressJS, MongoDB
 
 package:
-- backend: express, mongoose, dotenv
+- backend: express mongoose dotenv bcryptjs jsonwebtoken
 - frontend: 

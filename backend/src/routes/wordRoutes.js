@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const wordController = require('../controllers/wordController')
+const wordController = require('../controllers/wordController.js')
 
 router.get('/', wordController.getAllWords)
 router.post('/', wordController.createWord)
