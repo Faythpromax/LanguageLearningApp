@@ -5,6 +5,9 @@ const bcrypt = require('bcryptjs');
 // Đăng ký
 exports.register = async (req, res) => {
     const { email, password, name } = req.body;
+    if (!email || !password || !name) {
+        return res.status(400).json({ error: "Vui long nhap day du thong tin" });
+    }
 
     // Kiểm tra email đã tồn tại chưa
     const existingUser = await User.findOne({ email });
@@ -22,6 +25,9 @@ exports.register = async (req, res) => {
 // Đăng nhập
 exports.login = async (req, res) => {
     const { email, password } = req.body;
+    if (!email || !password) {
+        return res.status(400).json({ error: "Vui long nhap email va mat khau" });
+    }
 
     const user = await User.findOne({ email });
     if (!user) 

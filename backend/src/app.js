@@ -16,5 +16,8 @@ app.get('/', (req, res) => {
 app.use('/words', wordRoutes)
 app.use('/auth', authRoutes)
 
+// Phải đặt sau tất cả routes để bắt lỗi từ chúng
+app.use(require('./middlewares/errorHandler'))
+
 //export cho server.js dung
 module.exports = app;

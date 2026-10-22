@@ -6,7 +6,7 @@ const wordSchema = new mongoose.Schema({
     meaning:    { type: String, required: true },
     example:    String,
     level:      { type: String, enum: ['A1', 'A2', 'B1', 'B2'], default: 'A1'}
-}, { timestampts: true })
+}, { timestamps: true })
 
 const Word = mongoose.model('Word', wordSchema);
 

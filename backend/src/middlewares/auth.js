@@ -22,7 +22,7 @@ exports.protect = (req, res, next) => {
 exports.authorize = (...roles) => {
     return (req, res, next) => {
         if (!roles.includes(req.user.role)) {
-            return res.status(401).json({ error: "Khong co quyen" })
+            return res.status(403).json({ error: "Khong co quyen" })
         }
         next()
     }

@@ -16,15 +16,17 @@ exports.getWordById = async (req, res) => {
 
 // Tạo từ mới
 exports.createWord = async (req, res) => {
-    const newWord = await Word.create(req.body);
+    const { word, meaning, example, level } = req.body; // whitelist: chỉ lấy trường cho phép
+    const newWord = await Word.create({ word, meaning, example, level });
     res.status(201).json(newWord); // 201 = đã tạo thành công
 }
 
 // Sửa từ
 exports.updateWord = async (req, res) => {
+    const { word, meaning, example, level } = req.body;
     const updatedWord = await Word.findByIdAndUpdate(
         req.params.id, // Sửa từ nào (id)
-        req.body, // Sửa cái gì (dữ liệu nhận để update word)
+        { word, meaning, example, level }, // Sửa cái gì (trường undefined sẽ bị Mongoose bỏ qua)
     { // Sửa như thế nào (tùy chọn)
         returnDocument: 'after', // Trả về bản ghi sau khi update
         runValidators: true // Bật cờ này để sửa cũng phải tuân schema

@@ -2,6 +2,7 @@
 Ứng dụng học ngoại ngữ
 
 Ứng dụng cung cấp các chức năng như học từ vựng, ngữ pháp và làm kiểm tra. Ứng dụng tích hợp AI nhằm hỗ trợ người dùng học (luyện hội thoại, giải thích lỗi sai,...)
+Tham khảo: Elsa, Duolingo,...
 
 Các chức năng chính:
 - Authentication/Phân quyền
@@ -12,6 +13,13 @@ Các chức năng chính:
 
 Công nghệ sử dụng: Node js, React Native, ExpressJS, MongoDB
 
-package:
+extra package:
 - backend: express mongoose dotenv bcryptjs jsonwebtoken
+- frontend: @react-navigation/native @react-native-async-storage/async-storage
+
+Hướng dẫn chạy:
+- backend:
+cd backend
+node src/server.js
 - frontend: 
+npm run android
