@@ -1,0 +1,17 @@
+export default {
+    "LOGIN": "Login",
+    "REGISTER": "Register",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "NAME": "Name",
+    "WORD": "Word",
+    "MEANING": "Meaning",
+    "EXAMPLE": "Example",
+    "LEVEL": "Level",
+    "VOCABULARY": "Vocabulary",
+    "LOGOUT": "Logout",
+    "NO_WORDS": "No words yet",
+    "NO_ACCOUNT": "No account? Register",
+    "HAVE_ACCOUNT": "Already have an account? Login",
+    "ERROR": "Error",
+}

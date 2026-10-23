@@ -27,7 +27,7 @@ exports.updateWord = async (req, res) => {
     const updatedWord = await Word.findByIdAndUpdate(
         req.params.id, // Sửa từ nào (id)
         { word, meaning, example, level }, // Sửa cái gì (trường undefined sẽ bị Mongoose bỏ qua)
-    { // Sửa như thế nào (tùy chọn)
+    { // Sửa thêm (tùy chọn)
         returnDocument: 'after', // Trả về bản ghi sau khi update
         runValidators: true // Bật cờ này để sửa cũng phải tuân schema
     });

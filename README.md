@@ -15,11 +15,12 @@ Công nghệ sử dụng: Node js, React Native, ExpressJS, MongoDB
 
 extra package:
 - backend: express mongoose dotenv bcryptjs jsonwebtoken
-- frontend: @react-navigation/native @react-native-async-storage/async-storage
+- frontend: @react-navigation/native @native-stack @react-native-screens react-native-screens react-native-safe-area-context @react-navigation/native-stack @reduxjs/toolkit react-redux
 
 Hướng dẫn chạy:
 - backend:
 cd backend
-node src/server.js
+node src/server.js hoặc npm run dev
+adb reverse tcp:3000 tcp:3000 để kết nối điện thoại với backend
 - frontend: 
 npm run android

@@ -40,7 +40,7 @@ exports.login = async (req, res) => {
     const token = jwt.sign( // cấp JWT
         { id: user._id, role: user.role }, // Dữ liệu truyền vào (k truyền mật khẩu)
         process.env.JWT_SECRET, // Ký bằng khóa bí mật
-        { expiresIn: '7d' }
+        { expiresIn: '5m' }
     );
 
     res.json({ token });

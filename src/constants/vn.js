@@ -1,0 +1,17 @@
+export default {
+    "LOGIN": "Đăng nhập",
+    "REGISTER": "Đăng ký",
+    "EMAIL": "Email",
+    "PASSWORD": "Mật khẩu",
+    "NAME": "Tên",
+    "WORD": "Từ",
+    "MEANING": "Nghĩa",
+    "EXAMPLE": "Ví dụ",
+    "LEVEL": "Trình độ",
+    "VOCABULARY": "Từ vựng",
+    "LOGOUT": "Đăng xuất",
+    "NO_WORDS": "Chưa có từ nào",
+    "NO_ACCOUNT": "Chưa có tài khoản? Đăng ký",
+    "HAVE_ACCOUNT": "Đã có tài khoản? Đăng nhập",
+    "ERROR": "Lỗi",
+}
