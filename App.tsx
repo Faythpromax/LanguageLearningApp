@@ -69,7 +69,7 @@ function Main() {
       <StatusBar barStyle="dark-content" backgroundColor={color.white} />
       <SafeAreaView style={styles.safe}>
         <TouchableOpacity onPress={() => setLang(lang === 'vn' ? 'en' : 'vn')}>
-          <Text style={styles.link}>{lang === 'vn' ? 'EN' : 'VN'}</Text>
+          <Text style={styles.link}>{lang === 'vn' ? 'Tiếng Việt' : 'English'}</Text>
         </TouchableOpacity>
         {checking ? (
           <ActivityIndicator style={styles.container} />
