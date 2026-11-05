@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
   Alert,
+  StyleSheet,
   Text,
   TextInput,
   TouchableOpacity,
@@ -22,7 +23,7 @@ export default function AuthScreen({
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
-  const { t } = useLanguage();
+  const { lang, setLang, t } = useLanguage();
 
   const submit = async () => {
     setLoading(true);
@@ -41,43 +42,58 @@ export default function AuthScreen({
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{isLogin ? t('LOGIN') : t('REGISTER')}</Text>
+      <TouchableOpacity
+        style={s.langButton}
+        onPress={() => setLang(lang === 'vn' ? 'en' : 'vn')}
+      >
+        <Text style={s.langText}>{lang === 'vn' ? 'VN' : 'EN'}</Text>
+      </TouchableOpacity>
 
-      {!isLogin && (
+      {/* Logo + tên app */}
+      <View style={s.brand}>
+        <Text style={s.appName}>{t('APP_NAME')}</Text>
+        <Text style={styles.muted}>{t('APP_SLOGAN')}</Text>
+      </View>
+
+      {/* Form */}
+      <View style={styles.card}>
+        <Text style={styles.title}>{isLogin ? t('LOGIN') : t('REGISTER')}</Text>
+        {!isLogin && (
+          <TextInput
+            style={styles.input}
+            placeholder={t('NAME')}
+            placeholderTextColor={color.textMuted}
+            value={name}
+            onChangeText={setName}
+          />
+        )}
         <TextInput
           style={styles.input}
-          placeholder={t('NAME')}
-          placeholderTextColor={color.gray500}
-          value={name}
-          onChangeText={setName}
+          placeholder={t('EMAIL')}
+          placeholderTextColor={color.textMuted}
+          autoCapitalize="none"
+          keyboardType="email-address"
+          value={email}
+          onChangeText={setEmail}
         />
-      )}
-      <TextInput
-        style={styles.input}
-        placeholder={t('EMAIL')}
-        placeholderTextColor={color.gray500}
-        autoCapitalize="none"
-        keyboardType="email-address"
-        value={email}
-        onChangeText={setEmail}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder={t('PASSWORD')}
-        placeholderTextColor={color.gray500}
-        secureTextEntry
-        value={password}
-        onChangeText={setPassword}
-      />
-
-      <TouchableOpacity
-        style={styles.button}
-        onPress={submit}
-        disabled={loading}>
-        <Text style={styles.buttonText}>
-          {loading ? '...' : isLogin ? t('LOGIN') : t('REGISTER')}
-        </Text>
-      </TouchableOpacity>
+        <TextInput
+          style={styles.input}
+          placeholder={t('PASSWORD')}
+          placeholderTextColor={color.textMuted}
+          secureTextEntry
+          value={password}
+          onChangeText={setPassword}
+        />
+        <TouchableOpacity
+          style={styles.button}
+          onPress={submit}
+          disabled={loading}
+        >
+          <Text style={styles.buttonText}>
+            {loading ? '...' : isLogin ? t('LOGIN') : t('REGISTER')}
+          </Text>
+        </TouchableOpacity>
+      </View>
 
       <TouchableOpacity onPress={() => setIsLogin(!isLogin)}>
         <Text style={styles.link}>
@@ -87,3 +103,16 @@ export default function AuthScreen({
     </View>
   );
 }
+
+const s = StyleSheet.create({
+  langButton: {
+    alignSelf: 'flex-end',
+    backgroundColor: color.primaryLight,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 20,
+  },
+  langText: { color: color.primary, fontWeight: '700' },
+  brand: { alignItems: 'center', marginTop: 32, marginBottom: 28 },
+  appName: { fontSize: 32, fontWeight: '800', color: color.primary },
+});

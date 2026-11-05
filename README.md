@@ -15,12 +15,22 @@ Công nghệ sử dụng: Node js, React Native, ExpressJS, MongoDB
 
 extra package:
 - backend: express mongoose dotenv bcryptjs jsonwebtoken
-- frontend: @react-navigation/native @native-stack @react-native-screens react-native-screens react-native-safe-area-context @react-navigation/native-stack @reduxjs/toolkit react-redux
+- frontend: @react-navigation/native @native-stack @react-native-screens react-native-screens react-native-safe-area-context @react-navigation/native-stack @react-navigation/bottom-tabs @reduxjs/toolkit react-redux
+
+Giao diện: dùng bottom tab (@react-navigation/bottom-tabs) sau khi đăng nhập:
+- Học: flashcard kiểu Anki (stack New + Review, nút Again / Good, Add more cards)
+- Quản trị: dashboard tổng số từ vựng, bài ngữ pháp (chỉ hiện với tài khoản admin)
+- Tài khoản: số từ mới mỗi ngày, đổi ngôn ngữ, đăng xuất
+
+Màu chủ đạo: xanh dương + cam, khai báo trong src/constants/theme.js
 
 Hướng dẫn chạy:
 - backend:
 cd backend
 node src/server.js hoặc npm run dev
 adb reverse tcp:3000 tcp:3000 để kết nối điện thoại với backend
+npm run seed:admin   tạo tài khoản admin từ .env
+npm run seed:words   nhập từ vựng mẫu từ seeding/words.json
+npm test             chạy test backend
 - frontend: 
 npm run android
