@@ -29,8 +29,8 @@ exports.login = async (req, res) => {
         return res.status(400).json({ error: "Vui long nhap email va mat khau" });
     }
 
-    const user = await User.findOne({ email });
-    if (!user) 
+    const user = await User.findOne({ email }).select('+password'); // password mặc định bị ẩn (select: false)
+    if (!user)
         return res.status(401).json({ error: "Sai email hoac mat khau"})
 
     const match = await bcrypt.compare(password, user.password);
@@ -40,7 +40,7 @@ exports.login = async (req, res) => {
     const token = jwt.sign( // cấp JWT
         { id: user._id, role: user.role }, // Dữ liệu truyền vào (k truyền mật khẩu)
         process.env.JWT_SECRET, // Ký bằng khóa bí mật
-        { expiresIn: '5m' }
+        { expiresIn: '1d' } // tạm 1 ngày, khớp SESSION_DURATION_MS của app; sẽ thay bằng refresh token
     );
 
     res.json({ token });

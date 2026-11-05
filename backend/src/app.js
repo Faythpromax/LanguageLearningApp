@@ -2,6 +2,9 @@
 const express = require('express');
 const wordRoutes = require('./routes/wordRoutes')
 const authRoutes = require('./routes/authRoutes')
+const userRoutes = require('./routes/userRoutes')
+const studyRoutes = require('./routes/studyRoutes')
+const adminRoutes = require('./routes/adminRoutes')
 const app = express();
 
 // Middleware: cho phép Express đọc JSON trong body của request
@@ -15,6 +18,9 @@ app.get('/', (req, res) => {
 // Gắn /words là mặc định cho router của wordRoutes
 app.use('/words', wordRoutes)
 app.use('/auth', authRoutes)
+app.use('/users', userRoutes)
+app.use('/study', studyRoutes)
+app.use('/admin', adminRoutes)
 
 // Phải đặt sau tất cả routes để bắt lỗi từ chúng
 app.use(require('./middlewares/errorHandler'))
