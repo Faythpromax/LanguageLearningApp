@@ -1,0 +1,22 @@
+[
+  { "word": "family", "phonetic": "/ˈfæm.əl.i/", "partOfSpeech": "noun", "meaning": "gia đình", "example": "I love my family.", "exampleMeaning": "Tôi yêu gia đình của tôi.", "level": "A1" },
+  { "word": "mother", "phonetic": "/ˈmʌð.ər/", "partOfSpeech": "noun", "meaning": "mẹ", "example": "My mother is a teacher.", "exampleMeaning": "Mẹ tôi là giáo viên.", "level": "A1" },
+  { "word": "father", "phonetic": "/ˈfɑː.ðər/", "partOfSpeech": "noun", "meaning": "bố, cha", "example": "My father drives a car.", "exampleMeaning": "Bố tôi lái ô tô.", "level": "A1" },
+  { "word": "friend", "phonetic": "/frend/", "partOfSpeech": "noun", "meaning": "bạn bè", "example": "She is my best friend.", "exampleMeaning": "Cô ấy là bạn thân nhất của tôi.", "level": "A1" },
+  { "word": "house", "phonetic": "/haʊs/", "partOfSpeech": "noun", "meaning": "ngôi nhà", "example": "Our house is near the park.", "exampleMeaning": "Nhà chúng tôi ở gần công viên.", "level": "A1" },
+  { "word": "school", "phonetic": "/skuːl/", "partOfSpeech": "noun", "meaning": "trường học", "example": "I go to school by bike.", "exampleMeaning": "Tôi đi học bằng xe đạp.", "level": "A1" },
+  { "word": "teacher", "phonetic": "/ˈtiː.tʃər/", "partOfSpeech": "noun", "meaning": "giáo viên", "example": "The teacher is very kind.", "exampleMeaning": "Cô giáo rất tốt bụng.", "level": "A1" },
+  { "word": "book", "phonetic": "/bʊk/", "partOfSpeech": "noun", "meaning": "quyển sách", "example": "This book is interesting.", "exampleMeaning": "Quyển sách này thú vị.", "level": "A1" },
+  { "word": "water", "phonetic": "/ˈwɔː.tər/", "partOfSpeech": "noun", "meaning": "nước", "example": "Can I have some water?", "exampleMeaning": "Cho tôi xin ít nước được không?", "level": "A1" },
+  { "word": "food", "phonetic": "/fuːd/", "partOfSpeech": "noun", "meaning": "đồ ăn, thức ăn", "example": "The food here is good.", "exampleMeaning": "Đồ ăn ở đây ngon.", "level": "A1" },
+  { "word": "apple", "phonetic": "/ˈæp.əl/", "partOfSpeech": "noun", "meaning": "quả táo", "example": "I eat an apple every day.", "exampleMeaning": "Tôi ăn một quả táo mỗi ngày.", "level": "A1" },
+  { "word": "eat", "phonetic": "/iːt/", "partOfSpeech": "verb", "meaning": "ăn", "example": "We eat dinner at seven.", "exampleMeaning": "Chúng tôi ăn tối lúc bảy giờ.", "level": "A1" },
+  { "word": "drink", "phonetic": "/drɪŋk/", "partOfSpeech": "verb", "meaning": "uống", "example": "I drink milk in the morning.", "exampleMeaning": "Tôi uống sữa vào buổi sáng.", "level": "A1" },
+  { "word": "read", "phonetic": "/riːd/", "partOfSpeech": "verb", "meaning": "đọc", "example": "She reads a book before bed.", "exampleMeaning": "Cô ấy đọc sách trước khi ngủ.", "level": "A1" },
+  { "word": "write", "phonetic": "/raɪt/", "partOfSpeech": "verb", "meaning": "viết", "example": "Please write your name here.", "exampleMeaning": "Vui lòng viết tên của bạn ở đây.", "level": "A1" },
+  { "word": "go", "phonetic": "/ɡəʊ/", "partOfSpeech": "verb", "meaning": "đi", "example": "Let's go home.", "exampleMeaning": "Chúng ta về nhà thôi.", "level": "A1" },
+  { "word": "happy", "phonetic": "/ˈhæp.i/", "partOfSpeech": "adjective", "meaning": "vui vẻ, hạnh phúc", "example": "I am happy today.", "exampleMeaning": "Hôm nay tôi vui.", "level": "A1" },
+  { "word": "big", "phonetic": "/bɪɡ/", "partOfSpeech": "adjective", "meaning": "to, lớn", "example": "They have a big dog.", "exampleMeaning": "Họ có một con chó to.", "level": "A1" },
+  { "word": "small", "phonetic": "/smɔːl/", "partOfSpeech": "adjective", "meaning": "nhỏ, bé", "example": "My room is small.", "exampleMeaning": "Phòng của tôi nhỏ.", "level": "A1" },
+  { "word": "today", "phonetic": "/təˈdeɪ/", "partOfSpeech": "adverb", "meaning": "hôm nay", "example": "It is hot today.", "exampleMeaning": "Hôm nay trời nóng.", "level": "A1" }
+]
