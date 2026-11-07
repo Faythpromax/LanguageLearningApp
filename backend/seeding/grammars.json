@@ -1,0 +1,262 @@
+[
+  {
+    "title": "Verb \"to be\" (am / is / are)",
+    "structure": "I am / He, She, It is / You, We, They are + N / Adj",
+    "usage": ["Giới thiệu tên, nghề nghiệp, quốc tịch", "Miêu tả tính chất, trạng thái", "Nói về vị trí"],
+    "examples": [
+      { "en": "I am a student.", "vi": "Tôi là học sinh." },
+      { "en": "She is very kind.", "vi": "Cô ấy rất tốt bụng." },
+      { "en": "They are at home.", "vi": "Họ đang ở nhà." }
+    ],
+    "notes": "Phủ định thêm not (isn't, aren't). Câu hỏi đảo to be lên đầu: Are you ready?",
+    "level": "A1",
+    "order": 1
+  },
+  {
+    "title": "Present Simple",
+    "structure": "S + V(s/es) + O",
+    "usage": ["Thói quen, việc lặp lại hằng ngày", "Sự thật hiển nhiên", "Lịch trình cố định (tàu, xe, giờ học)"],
+    "examples": [
+      { "en": "I drink coffee every morning.", "vi": "Tôi uống cà phê mỗi sáng." },
+      { "en": "Water boils at 100 degrees.", "vi": "Nước sôi ở 100 độ." },
+      { "en": "The bus leaves at 7 a.m.", "vi": "Xe buýt khởi hành lúc 7 giờ sáng." }
+    ],
+    "notes": "He/She/It thêm s/es. Phủ định: don't/doesn't + V. Dấu hiệu: always, usually, often, every day.",
+    "level": "A1",
+    "order": 2
+  },
+  {
+    "title": "Present Continuous",
+    "structure": "S + am/is/are + V-ing",
+    "usage": ["Hành động đang xảy ra lúc nói", "Hành động tạm thời quanh thời điểm hiện tại", "Kế hoạch đã sắp xếp trong tương lai gần"],
+    "examples": [
+      { "en": "She is reading a book now.", "vi": "Bây giờ cô ấy đang đọc sách." },
+      { "en": "I am living with my aunt this month.", "vi": "Tháng này tôi đang ở với dì." },
+      { "en": "We are meeting Tom tomorrow.", "vi": "Ngày mai chúng tôi sẽ gặp Tom." }
+    ],
+    "notes": "Không dùng với động từ chỉ trạng thái như know, like, want. Dấu hiệu: now, right now, at the moment.",
+    "level": "A1",
+    "order": 3
+  },
+  {
+    "title": "There is / There are",
+    "structure": "There is + N số ít / There are + N số nhiều",
+    "usage": ["Nói cái gì đó tồn tại hoặc có ở đâu đó"],
+    "examples": [
+      { "en": "There is a cat on the sofa.", "vi": "Có một con mèo trên ghế sofa." },
+      { "en": "There are three books on the table.", "vi": "Có ba quyển sách trên bàn." },
+      { "en": "Is there a bank near here?", "vi": "Gần đây có ngân hàng không?" }
+    ],
+    "notes": "Danh từ không đếm được dùng There is: There is some milk.",
+    "level": "A1",
+    "order": 4
+  },
+  {
+    "title": "Articles: a / an / the",
+    "structure": "a + phụ âm / an + nguyên âm / the + N đã xác định",
+    "usage": ["a/an: nhắc đến lần đầu, 1 trong nhiều cái", "the: người nghe đã biết là cái nào, hoặc là duy nhất"],
+    "examples": [
+      { "en": "I have a dog and an umbrella.", "vi": "Tôi có một con chó và một cái ô." },
+      { "en": "The dog is in the garden.", "vi": "Con chó đang ở trong vườn." },
+      { "en": "The sun is hot.", "vi": "Mặt trời nóng." }
+    ],
+    "notes": "Xét theo âm chứ không theo chữ: an hour, a university.",
+    "level": "A1",
+    "order": 5
+  },
+  {
+    "title": "Plural nouns",
+    "structure": "N + s / es / ies, hoặc dạng bất quy tắc",
+    "usage": ["Nói về từ 2 người/vật trở lên"],
+    "examples": [
+      { "en": "I have two cats.", "vi": "Tôi có hai con mèo." },
+      { "en": "She bought three boxes.", "vi": "Cô ấy mua ba cái hộp." },
+      { "en": "The children are playing.", "vi": "Bọn trẻ đang chơi." }
+    ],
+    "notes": "Thêm es sau s, x, ch, sh, o. Phụ âm + y → ies (city → cities). Bất quy tắc: man → men, child → children, foot → feet.",
+    "level": "A1",
+    "order": 6
+  },
+  {
+    "title": "Possessive adjectives",
+    "structure": "my / your / his / her / its / our / their + N",
+    "usage": ["Chỉ sự sở hữu, đứng trước danh từ"],
+    "examples": [
+      { "en": "This is my bag.", "vi": "Đây là cái túi của tôi." },
+      { "en": "Her brother is tall.", "vi": "Anh trai cô ấy cao." },
+      { "en": "Our house is small.", "vi": "Nhà của chúng tôi nhỏ." }
+    ],
+    "notes": "Không nhầm its (của nó) với it's (it is).",
+    "level": "A1",
+    "order": 7
+  },
+  {
+    "title": "Can / Can't",
+    "structure": "S + can / can't + V nguyên mẫu",
+    "usage": ["Khả năng làm được việc gì", "Xin phép hoặc nhờ vả"],
+    "examples": [
+      { "en": "I can swim.", "vi": "Tôi biết bơi." },
+      { "en": "He can't drive a car.", "vi": "Anh ấy không biết lái ô tô." },
+      { "en": "Can I open the window?", "vi": "Tôi mở cửa sổ được không?" }
+    ],
+    "notes": "Sau can luôn là động từ nguyên mẫu, không thêm s: She can sing (không phải can sings).",
+    "level": "A1",
+    "order": 8
+  },
+  {
+    "title": "Prepositions of time: in / on / at",
+    "structure": "in + tháng/năm/mùa · on + ngày/thứ · at + giờ",
+    "usage": ["Nói thời điểm xảy ra sự việc"],
+    "examples": [
+      { "en": "My birthday is in May.", "vi": "Sinh nhật tôi vào tháng Năm." },
+      { "en": "We have class on Monday.", "vi": "Chúng tôi có lớp vào thứ Hai." },
+      { "en": "The film starts at 8 p.m.", "vi": "Phim bắt đầu lúc 8 giờ tối." }
+    ],
+    "notes": "Cụm cố định: in the morning, at night, at the weekend (Anh–Anh) / on the weekend (Anh–Mỹ).",
+    "level": "A1",
+    "order": 9
+  },
+  {
+    "title": "Imperatives",
+    "structure": "V nguyên mẫu + O · Don't + V",
+    "usage": ["Ra lệnh, hướng dẫn", "Lời khuyên, lời mời"],
+    "examples": [
+      { "en": "Open your books.", "vi": "Mở sách ra." },
+      { "en": "Don't touch that!", "vi": "Đừng chạm vào cái đó!" },
+      { "en": "Please sit down.", "vi": "Mời bạn ngồi." }
+    ],
+    "notes": "Thêm please để lịch sự hơn. Rủ cùng làm: Let's + V (Let's go).",
+    "level": "A1",
+    "order": 10
+  },
+  {
+    "title": "Past Simple of \"to be\" (was / were)",
+    "structure": "I, He, She, It was / You, We, They were",
+    "usage": ["Miêu tả trạng thái, vị trí trong quá khứ"],
+    "examples": [
+      { "en": "I was tired yesterday.", "vi": "Hôm qua tôi mệt." },
+      { "en": "They were at the party.", "vi": "Họ đã ở bữa tiệc." },
+      { "en": "Was it cold last night?", "vi": "Tối qua trời có lạnh không?" }
+    ],
+    "notes": "Phủ định: wasn't, weren't. Dấu hiệu: yesterday, last week, ago.",
+    "level": "A1",
+    "order": 11
+  },
+  {
+    "title": "Past Simple",
+    "structure": "S + V-ed / V2 + O",
+    "usage": ["Hành động đã xảy ra và kết thúc trong quá khứ", "Chuỗi hành động nối tiếp trong quá khứ"],
+    "examples": [
+      { "en": "I visited my grandma last Sunday.", "vi": "Chủ nhật trước tôi đã thăm bà." },
+      { "en": "She went to Da Nang in 2024.", "vi": "Cô ấy đã đi Đà Nẵng năm 2024." },
+      { "en": "He got up, ate breakfast and left.", "vi": "Anh ấy dậy, ăn sáng rồi đi." }
+    ],
+    "notes": "Phủ định và câu hỏi dùng did + V nguyên mẫu: I didn't go. Did you see it?",
+    "level": "A2",
+    "order": 12
+  },
+  {
+    "title": "Future with \"will\"",
+    "structure": "S + will + V nguyên mẫu",
+    "usage": ["Quyết định ngay lúc nói", "Dự đoán không có căn cứ rõ ràng", "Lời hứa, đề nghị giúp đỡ"],
+    "examples": [
+      { "en": "I'll answer the phone.", "vi": "Để tôi nghe điện thoại." },
+      { "en": "I think it will rain tomorrow.", "vi": "Tôi nghĩ mai trời sẽ mưa." },
+      { "en": "I will help you with your homework.", "vi": "Tôi sẽ giúp bạn làm bài tập." }
+    ],
+    "notes": "Phủ định: won't (will not).",
+    "level": "A2",
+    "order": 13
+  },
+  {
+    "title": "Be going to",
+    "structure": "S + am/is/are + going to + V",
+    "usage": ["Kế hoạch, dự định đã có từ trước", "Dự đoán có căn cứ ở hiện tại"],
+    "examples": [
+      { "en": "We are going to travel next month.", "vi": "Tháng sau chúng tôi định đi du lịch." },
+      { "en": "Look at the clouds! It's going to rain.", "vi": "Nhìn mây kìa! Trời sắp mưa." },
+      { "en": "She is going to study medicine.", "vi": "Cô ấy dự định học ngành y." }
+    ],
+    "notes": "So với will: going to là đã quyết từ trước, will là quyết ngay lúc nói.",
+    "level": "A2",
+    "order": 14
+  },
+  {
+    "title": "Comparative adjectives",
+    "structure": "Adj ngắn + er + than · more + Adj dài + than",
+    "usage": ["So sánh hai người hoặc hai vật"],
+    "examples": [
+      { "en": "My brother is taller than me.", "vi": "Anh tôi cao hơn tôi." },
+      { "en": "This book is more interesting than that one.", "vi": "Quyển sách này hay hơn quyển kia." },
+      { "en": "Today is better than yesterday.", "vi": "Hôm nay tốt hơn hôm qua." }
+    ],
+    "notes": "Bất quy tắc: good → better, bad → worse, far → farther/further. Phụ âm + y → ier (happy → happier).",
+    "level": "A2",
+    "order": 15
+  },
+  {
+    "title": "Superlative adjectives",
+    "structure": "the + Adj ngắn + est · the most + Adj dài",
+    "usage": ["So sánh một đối tượng với cả nhóm (từ 3 trở lên)"],
+    "examples": [
+      { "en": "He is the tallest in the class.", "vi": "Cậu ấy cao nhất lớp." },
+      { "en": "This is the most expensive phone.", "vi": "Đây là chiếc điện thoại đắt nhất." },
+      { "en": "It was the best day of my life.", "vi": "Đó là ngày tuyệt nhất đời tôi." }
+    ],
+    "notes": "Bất quy tắc: good → the best, bad → the worst. Luôn có the phía trước.",
+    "level": "A2",
+    "order": 16
+  },
+  {
+    "title": "Some / Any",
+    "structure": "some + N (câu khẳng định) · any + N (phủ định, câu hỏi)",
+    "usage": ["Nói số lượng không xác định với danh từ số nhiều hoặc không đếm được"],
+    "examples": [
+      { "en": "I have some apples.", "vi": "Tôi có vài quả táo." },
+      { "en": "There isn't any milk.", "vi": "Không còn chút sữa nào." },
+      { "en": "Do you have any questions?", "vi": "Bạn có câu hỏi nào không?" }
+    ],
+    "notes": "Lời mời, lời nhờ dùng some dù là câu hỏi: Would you like some tea?",
+    "level": "A2",
+    "order": 17
+  },
+  {
+    "title": "Much / Many / A lot of",
+    "structure": "many + N đếm được · much + N không đếm được · a lot of + cả hai",
+    "usage": ["Nói số lượng nhiều"],
+    "examples": [
+      { "en": "How many students are there?", "vi": "Có bao nhiêu học sinh?" },
+      { "en": "I don't have much time.", "vi": "Tôi không có nhiều thời gian." },
+      { "en": "She has a lot of friends.", "vi": "Cô ấy có nhiều bạn." }
+    ],
+    "notes": "much/many hay dùng trong câu phủ định và câu hỏi; câu khẳng định thường dùng a lot of.",
+    "level": "A2",
+    "order": 18
+  },
+  {
+    "title": "Present Perfect",
+    "structure": "S + have/has + V3 (past participle)",
+    "usage": ["Trải nghiệm, không nói rõ thời điểm", "Việc bắt đầu trong quá khứ, còn kéo dài tới nay", "Việc vừa mới xảy ra, kết quả còn ở hiện tại"],
+    "examples": [
+      { "en": "I have been to Japan.", "vi": "Tôi đã từng đến Nhật Bản." },
+      { "en": "She has lived here for five years.", "vi": "Cô ấy đã sống ở đây được năm năm." },
+      { "en": "I have just finished my homework.", "vi": "Tôi vừa làm xong bài tập." }
+    ],
+    "notes": "Dấu hiệu: ever, never, already, yet, just, for, since. Có thời điểm cụ thể (yesterday, in 2020) thì dùng Past Simple.",
+    "level": "A2",
+    "order": 19
+  },
+  {
+    "title": "Should / Shouldn't",
+    "structure": "S + should / shouldn't + V nguyên mẫu",
+    "usage": ["Đưa ra lời khuyên", "Nói điều nên hoặc không nên làm"],
+    "examples": [
+      { "en": "You should drink more water.", "vi": "Bạn nên uống nhiều nước hơn." },
+      { "en": "He shouldn't stay up late.", "vi": "Anh ấy không nên thức khuya." },
+      { "en": "What should I do?", "vi": "Tôi nên làm gì?" }
+    ],
+    "notes": "Giống can: sau should là động từ nguyên mẫu, không chia theo chủ ngữ.",
+    "level": "A2",
+    "order": 20
+  }
+]

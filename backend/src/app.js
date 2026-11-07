@@ -5,6 +5,7 @@ const authRoutes = require('./routes/authRoutes')
 const userRoutes = require('./routes/userRoutes')
 const studyRoutes = require('./routes/studyRoutes')
 const adminRoutes = require('./routes/adminRoutes')
+const grammarRoutes = require('./routes/grammarRoutes')
 const app = express();
 
 // Middleware: cho phép Express đọc JSON trong body của request
@@ -21,6 +22,7 @@ app.use('/auth', authRoutes)
 app.use('/users', userRoutes)
 app.use('/study', studyRoutes)
 app.use('/admin', adminRoutes)
+app.use('/grammars', grammarRoutes)
 
 // Phải đặt sau tất cả routes để bắt lỗi từ chúng
 app.use(require('./middlewares/errorHandler'))

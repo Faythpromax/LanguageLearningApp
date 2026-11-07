@@ -15,6 +15,7 @@ export type Word = {
   meaning: string;
   example?: string;
   exampleMeaning?: string;
+  level?: 'A1' | 'A2' | 'B1' | 'B2';
 };
 
 // Hàm gọi API dùng chung: tự thêm Content-Type, tự đính kèm token (nếu có),
@@ -98,7 +99,104 @@ export function addExtraCards(
   );
 }
 
-// Admin
+// Admin: quản lý từ vựng
+export type WordInput = Omit<Word, '_id'>;
+
+export function getWords(token: string): Promise<Word[]> {
+  return request('/words', {}, token);
+}
+
+export function createWord(input: WordInput, token: string): Promise<Word> {
+  return request(
+    '/words',
+    { method: 'POST', body: JSON.stringify(input) },
+    token,
+  );
+}
+
+export function updateWord(
+  id: string,
+  input: WordInput,
+  token: string,
+): Promise<Word> {
+  return request(
+    `/words/${id}`,
+    { method: 'PUT', body: JSON.stringify(input) },
+    token,
+  );
+}
+
+export function deleteWord(id: string, token: string) {
+  return request(`/words/${id}`, { method: 'DELETE' }, token);
+}
+
+// Ngữ pháp: người học xem, admin thêm/sửa/xóa
+export type Grammar = {
+  _id: string;
+  title: string;
+  structure?: string;
+  usage: string[];
+  examples: { en: string; vi: string }[];
+  notes?: string;
+  level?: 'A1' | 'A2' | 'B1' | 'B2';
+  order?: number;
+};
+export type GrammarInput = Omit<Grammar, '_id'>;
+
+export function getGrammars(token: string): Promise<Grammar[]> {
+  return request('/grammars', {}, token);
+}
+
+export function createGrammar(
+  input: GrammarInput,
+  token: string,
+): Promise<Grammar> {
+  return request(
+    '/grammars',
+    { method: 'POST', body: JSON.stringify(input) },
+    token,
+  );
+}
+
+export function updateGrammar(
+  id: string,
+  input: GrammarInput,
+  token: string,
+): Promise<Grammar> {
+  return request(
+    `/grammars/${id}`,
+    { method: 'PUT', body: JSON.stringify(input) },
+    token,
+  );
+}
+
+export function deleteGrammar(id: string, token: string) {
+  return request(`/grammars/${id}`, { method: 'DELETE' }, token);
+}
+
+// Tra phiên âm IPA từ Free Dictionary API (miễn phí, không cần key).
+// Không có dữ liệu (404) hoặc không có phiên âm thì trả '' để admin tự nhập.
+export async function lookupPhonetic(word: string): Promise<string> {
+  const res = await fetch(
+    `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(
+      word,
+    )}`,
+  );
+  if (!res.ok) {
+    return '';
+  }
+  const entries: { phonetic?: string; phonetics?: { text?: string }[] }[] =
+    await res.json();
+  for (const e of entries) {
+    const text = e.phonetic || e.phonetics?.find(p => p.text)?.text;
+    if (text) {
+      return text;
+    }
+  }
+  return '';
+}
+
+// Admin: dashboard
 export function getAdminStats(
   token: string,
 ): Promise<{ words: number; grammars: number }> {

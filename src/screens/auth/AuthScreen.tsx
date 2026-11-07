@@ -7,10 +7,10 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import * as api from '../api';
-import { color } from '../constants/theme';
-import { useLanguage } from '../lang';
-import { styles } from '../styles';
+import * as api from '../../api';
+import { color } from '../../constants/theme';
+import { useLanguage } from '../../lang';
+import { styles } from '../../styles';
 
 // Màn hình đăng nhập / đăng ký
 export default function AuthScreen({

@@ -10,10 +10,13 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Provider, useDispatch, useSelector } from 'react-redux';
 import * as api from './src/api';
-import AuthScreen from './src/screens/AuthScreen';
-import WordsScreen from './src/screens/WordsScreen';
-import ProfileScreen from './src/screens/ProfileScreen';
-import AdminScreen from './src/screens/AdminScreen';
+import AuthScreen from './src/screens/auth/AuthScreen';
+import WordsScreen from './src/screens/user/vocabulary/WordsScreen';
+import ProfileScreen from './src/screens/user/ProfileScreen';
+import AdminScreen from './src/screens/admin/AdminScreen';
+import AdminWordsScreen from './src/screens/admin/AdminWordsScreen';
+import AdminGrammarScreen from './src/screens/admin/AdminGrammarScreen';
+import GrammarScreen from './src/screens/user/grammar/GrammarScreen';
 import { clearSession, loadSession, saveSession } from './src/session';
 import { color } from './src/constants/theme';
 import { useLanguage } from './src/lang';
@@ -29,6 +32,8 @@ const tabIcon = (emoji: string) => () =>
   <Text style={styles.tabIcon}>{emoji}</Text>;
 const StudyIcon = tabIcon('📖');
 const AdminIcon = tabIcon('📊');
+const WordsIcon = tabIcon('🗂️');
+const GrammarIcon = tabIcon('📝');
 const ProfileIcon = tabIcon('👤');
 
 function Main() {
@@ -90,7 +95,12 @@ function Main() {
     );
   }
 
-  // Đã đăng nhập: thanh tab dưới, tab Quản trị chỉ hiện với admin
+  // Chờ tải xong user mới biết là admin hay người học
+  if (!user) {
+    return <ActivityIndicator style={styles.container} color={color.primary} />;
+  }
+
+  // Đã đăng nhập: admin có Tổng quan + quản lý Từ vựng / Ngữ pháp, người học có Học + Ngữ pháp
   return (
     <NavigationContainer>
       <Tab.Navigator
@@ -102,17 +112,37 @@ function Main() {
           tabBarInactiveTintColor: color.textMuted,
         }}
       >
-        <Tab.Screen
-          name="Study"
-          component={WordsScreen}
-          options={{ title: t('STUDY'), tabBarIcon: StudyIcon }}
-        />
-        {user?.role === 'admin' && (
-          <Tab.Screen
-            name="Admin"
-            component={AdminScreen}
-            options={{ title: t('ADMIN'), tabBarIcon: AdminIcon }}
-          />
+        {user.role === 'admin' ? (
+          <>
+            <Tab.Screen
+              name="Admin"
+              component={AdminScreen}
+              options={{ title: t('DASHBOARD'), tabBarIcon: AdminIcon }}
+            />
+            <Tab.Screen
+              name="AdminWords"
+              component={AdminWordsScreen}
+              options={{ title: t('VOCABULARY'), tabBarIcon: WordsIcon }}
+            />
+            <Tab.Screen
+              name="AdminGrammar"
+              component={AdminGrammarScreen}
+              options={{ title: t('GRAMMAR'), tabBarIcon: GrammarIcon }}
+            />
+          </>
+        ) : (
+          <>
+            <Tab.Screen
+              name="Study"
+              component={WordsScreen}
+              options={{ title: t('STUDY'), tabBarIcon: StudyIcon }}
+            />
+            <Tab.Screen
+              name="Grammar"
+              component={GrammarScreen}
+              options={{ title: t('GRAMMAR'), tabBarIcon: GrammarIcon }}
+            />
+          </>
         )}
         <Tab.Screen
           name="Profile"

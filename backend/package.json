@@ -7,6 +7,7 @@
     "dev": "node --watch src/server.js",
     "seed:admin": "node seeding/createAdmin.js",
     "seed:words": "node seeding/importWords.js",
+    "seed:grammars": "node seeding/importGrammars.js",
     "test": "node --test"
   },
   "keywords": [],
